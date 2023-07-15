@@ -40,7 +40,6 @@ nav > ul {
 }
 nav li {
   list-style: none;
-
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
@@ -76,4 +75,42 @@ nav li a {
 }
 .banner img {
   width: 100%;
+}
+
+/* responsive media queries */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li {
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 40px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav li {
+    margin-right: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
 }
