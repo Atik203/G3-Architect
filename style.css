@@ -161,8 +161,30 @@ main {
 }
 .photo {
   max-width: 580px;
-  max-height: 990px;
+  height: 900px;
 }
+.badge {
+  width: 280px;
+  height: 150px;
+  border-radius: 8px;
+  background: #ff900e;
+  color: white;
+  position: relative;
+  bottom: 90px;
+  right: 70px;
+}
+.badge-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+.experience {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 /* facts section */
 .facts {
 }
@@ -274,8 +296,24 @@ main {
     width: 150px;
     padding-left: 110px;
   }
+  .features {
+    flex-direction: column;
+  }
+  .badge {
+    position: relative;
+    left: 45px;
+    top: 70px;
+  }
+  .photo {
+    width: 95%;
+    margin: 0px;
+    height: 580px;
+    padding-left: 10px;
+  }
+  .feature-card {
+    width: 90%;
+  }
 }
-
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   header {
@@ -318,5 +356,22 @@ main {
     gap: 30px;
     padding: 45px;
     width: 150px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .badge {
+    position: relative;
+    left: 11rem;
+    top: 70px;
+  }
+  .photo {
+    width: 100%;
+    margin: 0px;
+    height: 800px;
+    padding-left: 40px;
+  }
+  .feature-card {
+    width: 100%;
   }
 }
